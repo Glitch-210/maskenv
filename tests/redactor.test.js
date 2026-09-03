@@ -30,7 +30,7 @@ describe('Stream Interceptor', () => {
 
   test('catches hardcoded Stripe keys natively', () => {
     enableRedaction([]);
-    const fakeKey = 'sk_live_' + 'abcdef1234567890abcdef1234567890';
+    const fakeKey = 'sk_live_' + '123456789012345678901234';
     process.stdout.write(`Payment for ${fakeKey} failed`);
     assert.ok(output[0].includes('[REDACTED]'));
     assert.ok(!output[0].includes('sk_live_'));
