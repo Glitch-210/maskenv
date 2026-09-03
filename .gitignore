@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Testing & Coverage
+coverage/
+.nyc_output/
+
+# Environment and Credentials (Critical)
+.env
+.env.*
+!.env.example
+.npmrc
+
+# OS Metadata
+.DS_Store
+Thumbs.db
+
+# IDE / Editors
+.vscode/
+.idea/

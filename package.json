@@ -1,0 +1,35 @@
+{
+  "name": "maskenv",
+  "version": "1.0.0",
+  "description": "Zero-dependency stdout secret redactor",
+  "type": "module",
+  "main": "./src/index.cjs",
+  "exports": {
+    ".": {
+      "import": "./src/index.mjs",
+      "require": "./src/index.cjs"
+    },
+    "./auto": {
+      "import": "./src/auto.mjs",
+      "require": "./src/auto.cjs"
+    }
+  },
+  "scripts": {
+    "test": "node --test tests/**/*.test.js"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "security",
+    "redact",
+    "env",
+    "ai",
+    "agent"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  }
+}
