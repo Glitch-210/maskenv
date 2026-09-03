@@ -1,6 +1,5 @@
+## 👻 maskenv
 ```markdown
-# 👻 maskenv
-
 **A zero-dependency, hyper-fast stdout secret redactor for Node.js.**
 
 As autonomous AI coding agents (like Claude Code, Aider, and Gemini CLI) increasingly read local terminal outputs and stack traces, the risk of accidentally leaking `.env` secrets into cloud LLM context windows has skyrocketed. 
